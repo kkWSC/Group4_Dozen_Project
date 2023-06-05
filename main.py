@@ -23,7 +23,7 @@ def start():
         background-size: cover
         background-position: center center;
         background-repeat:repeat;
-        background-image: url(https://img.zcool.cn/community/01745f58351fd2a801219c778dcb34.jpg@1280w_1l_2o_100sh.jpg)
+        background-image: url(https://img.tagvenue.com/resize/c1/ed/widen-1680;8585-mercure-liverpool-atlantic-tower-hotel-venue.jpg)
         }
     [data-testid="stHeader"]{
         background-color:rgba(0, 0, 0, 0)
