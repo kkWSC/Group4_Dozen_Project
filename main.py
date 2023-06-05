@@ -23,12 +23,12 @@ def start():
         background-size: cover
         background-position: center center;
         background-repeat:repeat;
-        background-image: url(https://img.zcool.cn/community/01745f58351fd2a801219c778dcb34.jpg@1280w_1l_2o_100sh.jpg)
+        background-image: url(https://pic1.58cdn.com.cn/enterprise/appearance/big/n_v298a79137752744c79892b3082e91639c.jpg)
         }
     [data-testid="stHeader"]{
         background-color:rgba(0, 0, 0, 0)
         }
-    </style>
+    </style>gi
     """
     st.markdown(bg_image1, unsafe_allow_html=True)
 
