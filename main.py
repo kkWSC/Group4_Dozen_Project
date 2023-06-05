@@ -23,7 +23,7 @@ def start():
         background-size: cover
         background-position: center center;
         background-repeat:repeat;
-        background-image: url(bg.png)
+        background-image: url(https://all.accor.com/hotel/B4Z7/index.zh.shtml)
         }
     [data-testid="stHeader"]{
         background-color:rgba(0, 0, 0, 0)
