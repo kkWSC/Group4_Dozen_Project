@@ -71,7 +71,8 @@ class Profit(pg.Page):
         # Display the chart
         col21, col22 = st.columns([3, 1])
         with col21:
-            self.yield_chart()
+            # self.yield_chart()
+            st.write("test")
 
         with col22:
             self.compare_yield()
