@@ -23,7 +23,7 @@ def start():
         background-size: cover
         background-position: center center;
         background-repeat:repeat;
-        background-image: url(https://all.accor.com/hotel/B4Z7/index.zh.shtml)
+        background-image: url(https://zh.wikipedia.org/wiki/%E9%85%92%E5%BA%97#/media/File:The_Peninsula.jpg)
         }
     [data-testid="stHeader"]{
         background-color:rgba(0, 0, 0, 0)
