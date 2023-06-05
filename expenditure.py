@@ -155,7 +155,7 @@ class Expenditure(pg.Page):
         # Set axis labels and adjust font style, color and size
         font = {'color': 'white', 'size': 16}
         ax.set_xlabel('Month', fontdict=font)
-        ax.set_ylabel('Revenue', fontdict=font)
+        ax.set_ylabel('Expenditure', fontdict=font)
         ax.set_xticks([i + height * 2 for i in x])
         ax.set_xticklabels(self.de['Month'].unique(), fontdict=font)
         ax.tick_params(axis='both', labelcolor='white', labelsize=10)
