@@ -23,7 +23,7 @@ def start():
         background-size: cover
         background-position: center center;
         background-repeat:repeat;
-        background-image: url(https://group4-project-bg.oss-cn-beijing.aliyuncs.com/bg4.png)
+        background-image: url(https://group4-project-bg.oss-cn-beijing.aliyuncs.com/bg6.png)
         }
     [data-testid="stHeader"]{
         background-color:rgba(0, 0, 0, 0)
