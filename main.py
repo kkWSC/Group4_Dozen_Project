@@ -23,7 +23,7 @@ def start():
         background-size: cover
         background-position: center center;
         background-repeat:repeat;
-        background-image: url(./bg.png)
+        background-image: url(bg.png)
         }
     [data-testid="stHeader"]{
         background-color:rgba(0, 0, 0, 0)

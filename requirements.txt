@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 streamlit~=0.86.0
 matplotlib~=3.3.4
 numpy~=1.19.5
+=======
+matplotlib==3.4.2
+pyecharts
+>>>>>>> 9a83e4a85b45384879fb7a21d0888129e55ecd4b
