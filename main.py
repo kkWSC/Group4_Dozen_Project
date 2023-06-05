@@ -23,7 +23,7 @@ def start():
         background-size: cover
         background-position: center center;
         background-repeat:repeat;
-        background-image: url(bg.png)
+        background-image: url(https://thumbnail1.baidupcs.com/thumbnail/9b2966e05q1d2f22acc172262bb788c1?fid=4283905280-250528-230466129290943&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-dK4LZsQ%2bS3rVDHhtwelkdOMyH8A%3d&expires=8h&chkbd=0&chkv=0&dp-logid=153440246627702721&dp-callid=0&time=1685955600&size=c1920_u1080&quality=90&vuk=4283905280&ft=image&autopolicy=1)
         }
     [data-testid="stHeader"]{
         background-color:rgba(0, 0, 0, 0)

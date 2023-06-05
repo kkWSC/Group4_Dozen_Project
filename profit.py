@@ -131,11 +131,11 @@ class Profit(pg.Page):
 
         # Display the results using Streamlit metrics and Markdown syntax
         with col11:
-            st.metric("This Month / Last Month", f"{this_month}", f"{result1_str}")
+            st.metric("This Month / Last Month", f"${this_month}", f"{result1_str}")
         with col12:
-            st.metric("This Month Yo-y", f"{this_month}", f"{result2_str}")
+            st.metric("This Month Yo-y", f"${this_month}", f"{result2_str}")
         with col13:
-            st.metric("This Year / Last Year", f"{this_year}", f"{result3_str}")
+            st.metric("This Year / Last Year", f"${this_year}", f"{result3_str}")
         with col14:
             # Set HTML tags to change the text color to white
             st.markdown("<p style='color:white;'>Total Profit</p>", unsafe_allow_html=True)
