@@ -131,11 +131,11 @@ class Profit(pg.Page):
 
         # Display the results using Streamlit metrics and Markdown syntax
         with col11:
-            st.metric("This Month / Last Month", f"${this_month}", f"{result1_str}")
+            st.metric("Present Month / Last Month", f"${this_month}", f"{result1_str}")
         with col12:
-            st.metric("This Month Yo-y", f"${this_month}", f"{result2_str}")
+            st.metric("Present Month Yo-y", f"${this_month}", f"{result2_str}")
         with col13:
-            st.metric("This Year / Last Year", f"${this_year}", f"{result3_str}")
+            st.metric("Present Year / Last Year", f"${this_year}", f"{result3_str}")
         with col14:
             # Set HTML tags to change the text color to white
             st.markdown("<p style='color:white;'>Total Profit</p>", unsafe_allow_html=True)
@@ -157,7 +157,7 @@ class Profit(pg.Page):
 
         # Set chart title and axis labels, with font color and size adjustments
         font = {'color': 'white', 'size': 16}
-        ax.set_title('Profit line chart', fontdict=font)
+        ax.set_title('Profit line chart 2020-2022', fontdict=font)
         ax.set_xlabel('Month', fontdict=font)
         ax.set_ylabel('Profit', fontdict=font)
 

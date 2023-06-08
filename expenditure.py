@@ -7,14 +7,23 @@ import matplotlib.pyplot as plt
 # create a subclass -- Expenditure, inherit from Page class
 class Expenditure(pg.Page):
 
-    def __init__(self, name, m_name, year):
+    def __init__(self, name, m_name, year, element):
         """
         Constructor function to initialize variables and load data from csv files.
         """
         super().__init__(name)  # invoke constructor function of father class
         self.m_name = m_name  # page name
         self.year = year  # year of expenditure data
+        self.element = element
         self.de = pd.read_csv(f'{self.year}_expend.csv')  # read csv file and store as a pandas dataframe
+
+        self.color_dict = {
+            "Hotel_Maintenance": 0,
+            "Labor": 1,
+            "Water_And_Electricity": 2,
+            "Material_Procurement": 3,
+            "Marketing_And_Publicity": 4
+        }
 
     def show_content(self):
         """
@@ -41,6 +50,8 @@ class Expenditure(pg.Page):
 
         # Show detailed outlay
         self.outlay_detail()
+
+        self.outlay_detail_by_each()
 
     def total_outlay(self):
         """
@@ -179,3 +190,53 @@ class Expenditure(pg.Page):
 
         # Display the chart figure
         st.pyplot(fig)
+
+    def outlay_detail_by_each(self):
+        """
+        A function to plot a bar chart of detailed expenditure by month for each expenditure item.
+        """
+        col1, col2 = st.columns([3, 1])
+        with col2:
+            st.write("")
+            st.write("")
+            st.write("")
+            st.markdown("<h4 style='text-align: right; color:#C0C0C0;'>New features are in development...</h4>",
+                        unsafe_allow_html=True)
+            st.markdown("<h4 style='text-align: right; color:#C0C0C0;'>Please look forward to it</h4>",
+                        unsafe_allow_html=True)
+
+        with col1:
+            # Calculate the monthly revenue by category
+            show_by_month = self.de.groupby('Month')[f'{self.element}'].sum()
+
+            i = self.color_dict[self.element]
+            # Generate a bar chart
+            fig1, ax = plt.subplots()
+            show_by_month.plot(kind='bar', ax=ax, color=self.colors[i])
+
+            # Add title and axis labels, and adjust font color and size
+            font = {'color': 'white', 'size': 16}
+            ax.set_title(f'{self.element} in {self.year}', fontdict=font)
+            ax.set_xlabel('Month', fontdict=font)
+            ax.set_ylabel('Expenditure', fontdict=font)
+
+            # Change the orientation of x-axis text from vertical to horizontal
+            plt.xticks(rotation=0)
+
+            # Set the background of the histogram to transparent and adjust font color and size
+            ax.set_axisbelow(True)
+            ax.yaxis.grid(True, color='orange', linestyle='dashed', alpha=0.5)
+            ax.set_facecolor('none')
+            for tick in ax.get_xticklabels():
+                tick.set_color('white')
+                tick.set_fontsize(10)
+            for tick in ax.get_yticklabels():
+                tick.set_color('white')
+                tick.set_fontsize(10)
+
+            # Set the chart background to transparent
+            fig1.patch.set_alpha(0.0)
+
+            # Display the chart
+            st.pyplot(fig1)
+

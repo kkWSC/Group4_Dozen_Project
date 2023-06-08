@@ -63,17 +63,27 @@ class PageManager:
             select_page = st.radio('Please select the page:', ['Revenue', 'Expenditure', 'Profit'])
             st.write("")
             year = st.selectbox('please select the year:', ['2022', '2021', '2020'])
+            st.write("")
 
             if select_page == "Revenue":
-                self.page1 = ic.Income(self.name, "REVENUE", year)
+                element = st.radio('Please select the attribute:', ['Room_Revenue', 'Catering_Revenue',
+                                                               'Meetings_And_Events', 'Entertainment', 'Other_Revenue'])
+                self.page1 = ic.Income(self.name, "REVENUE", year, element)
+
             if select_page == "Expenditure":
-                self.page1 = ex.Expenditure(self.name, "EXPENDITURE", year)
+                element = st.radio('Please select the attribute:',
+                                   ['Hotel_Maintenance', 'Labor', 'Water_And_Electricity',
+                                    'Material_Procurement', 'Marketing_And_Publicity'])
+                self.page1 = ex.Expenditure(self.name, "EXPENDITURE", year, element)
+
             if select_page == "Profit":
                 self.page1 = pf.Profit(self.name, "PROFIT", year)
 
             st.markdown("<hr style='border-top: 2px solid #B0C4DE; width: 100%;'>", unsafe_allow_html=True)
+
             if st.button("flushed"):
                 st.write("The page has been refreshed")
+
             st.markdown("**[# HELP #](https://cn.bing.com/)**", unsafe_allow_html=True)
 
         # Show the selected page

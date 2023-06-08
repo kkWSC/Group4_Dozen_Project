@@ -48,6 +48,9 @@ def start():
     [data-testid="stMetricLabel"]{
         color: white
         }
+    [data-testid="stMetricValue"]{
+        color: white
+        }
     </style>
     """
     st.markdown(bg_image3, unsafe_allow_html=True)
