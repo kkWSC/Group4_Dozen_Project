@@ -73,7 +73,7 @@ class Income(pg.Page):
 
         # Add title and axis labels, and adjust font color and size
         font = {'color': 'white', 'size': 16}
-        ax.set_title('Total Revenue', fontdict=font)
+        ax.set_title(f'Total Revenue in {self.year}', fontdict=font)
         ax.set_xlabel('Month', fontdict=font)
         ax.set_ylabel('Revenue', fontdict=font)
 
