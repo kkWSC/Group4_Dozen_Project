@@ -23,12 +23,12 @@ def start():
         background-size: cover
         background-position: center center;
         background-repeat:repeat;
-        background-image: url(https://pic1.58cdn.com.cn/enterprise/appearance/big/n_v298a79137752744c79892b3082e91639c.jpg)
+        background-image: url(https://group4-project-bg.oss-cn-beijing.aliyuncs.com/bg4.png)
         }
     [data-testid="stHeader"]{
         background-color:rgba(0, 0, 0, 0)
         }
-    </style>gi
+    </style>
     """
     st.markdown(bg_image1, unsafe_allow_html=True)
 
@@ -46,9 +46,6 @@ def start():
     bg_image3 = """
     <style>
     [data-testid="stMetricLabel"]{
-        color: white
-        }
-    [data-testid="stMetricValue"]{
         color: white
         }
     </style>
