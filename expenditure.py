@@ -69,7 +69,7 @@ class Expenditure(pg.Page):
 
         # Set chart title and axis labels and adjust font style, color and size
         font = {'color': 'white', 'size': 16}
-        ax.set_title('Total Expenditure', fontdict=font)
+        ax.set_title(f'Total Expenditure in {self.year}', fontdict=font)
         ax.set_xlabel('Month', fontdict=font)
         ax.set_ylabel('Expenditure', fontdict=font)
 
