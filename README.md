@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# Group4_Dozen_Project
+Group4_Dozen_Project, this is a simple visualization system.
+>>>>>>> a455c9c1be8fb00bedcaec8e851811de8940ab3f
 # Hotel Financial Analysis Visualization System
 
 The system is designed specifically for hotel managers and relevant stakeholders so that they can track the financial condition of the hotel and make appropriate business decisions.We will show the data visualization of the financial statements of a hotel in the past three years.This system  describes a data visualization website that displays financial reports to stakeholders.The financial report includes the hotel's monthly expenditure, revenue, profit and other relevant data for the past three years.Pie charts, bar charts, line charts, map and other types of charts are used to display data to help hotel managers analyze the financial situation of the hotel and make appropriate business decisions.

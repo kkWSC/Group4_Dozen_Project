@@ -1,4 +1,8 @@
 matplotlib
 pyecharts
 pandas==1.2.4
+<<<<<<< HEAD
 openpyxl==3.0.7
+=======
+openpyxl==3.0.7
+>>>>>>> a455c9c1be8fb00bedcaec8e851811de8940ab3f

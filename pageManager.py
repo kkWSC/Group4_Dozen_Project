@@ -53,7 +53,7 @@ class PageManager:
         # divide the page using line
         st.markdown("<hr style='border-top: 2px solid white; width: 100%;'>", unsafe_allow_html=True)
         home1.markdown(f"<h1 style='text-align: center; color: white;'>" 
-                       f"Welcome to {self.name} Hotel Data Visualization Systems!</h1>", unsafe_allow_html=True)
+                       f"Welcome to {self.name} Hotel Financial Analysis Visualization System!</h1>", unsafe_allow_html=True)
 
         # menu page
         with st.sidebar:
@@ -67,7 +67,8 @@ class PageManager:
 
             if select_page == "Revenue":
                 element = st.radio('Please select the attribute:', ['Room_Revenue', 'Catering_Revenue',
-                                                               'Meetings_And_Events', 'Entertainment', 'Other_Revenue'])
+                                                                    'Meetings_And_Events', 'Entertainment',
+                                                                    'Other_Revenue'])
                 self.page1 = ic.Income(self.name, "REVENUE", year, element)
 
             if select_page == "Expenditure":
